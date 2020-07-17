@@ -1,0 +1,7 @@
+@import "packages/theme-chalk/src/mixins/mixins";
+@import "packages/theme-chalk/src/mixins/utils";
+@import "./common/var.scss";
+
+@include b(breadcrumb) {
+    font-size: $--font-size-base;
+}

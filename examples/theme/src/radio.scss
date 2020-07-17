@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@import "./common/var.scss";
+@import "./mixins/button";
+@import "packages/theme-chalk/src/mixins/mixins";
+@import "packages/theme-chalk/src/mixins/utils";
+
+@include b(radio) {
+    @include when(bordered) {
+        line-height: $--radio-bordered-height - 2;
+    }
+    @include m(medium) {
+        &.is-bordered {
+            line-height: $--radio-bordered-medium-height - 2;
+        }
+    }
+    @include m(small)  {
+        &.is-bordered {
+            line-height: $--radio-bordered-small-height - 2;
+        }
+    }
+    @include m(mini) {
+        &.is-bordered {
+            line-height: $--radio-bordered-mini-height - 2;
+        }
+    }
+}
