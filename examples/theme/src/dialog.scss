@@ -1,7 +1,6 @@
 @import "packages/theme-chalk/src/mixins/mixins";
 @import "packages/theme-chalk/src/mixins/utils";
 @import "./common/var.scss";
-@import "packages/theme-chalk/src/common/popup";
 
 @include b(dialog) {
     @include e(header) {

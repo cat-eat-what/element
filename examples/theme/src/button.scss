@@ -56,4 +56,23 @@
     @include m(mini) {
         @include button-size($--button-mini-padding-vertical, $--button-mini-padding-horizontal, $--button-mini-font-size, $--button-mini-border-radius);
     }
+
+    @include m(text) {
+        &:hover,
+        &:focus {
+            color: $--color-info-light;
+            border-color: transparent;
+            background-color: transparent;
+        }
+        &:active {
+            color: $--color-info-light;
+            border-color: transparent;
+            background-color: transparent;
+        }
+        &.is-disabled,
+        &.is-disabled:hover,
+        &.is-disabled:focus {
+            color: $--color-info-lighter;
+        }
+    }
 }

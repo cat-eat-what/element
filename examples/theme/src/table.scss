@@ -3,7 +3,7 @@
 
 @include b(table) {
     font-size: $--font-size-base;
-    
+
     @include e(expand-icon) {
         font-size: $--font-size-base;
     }

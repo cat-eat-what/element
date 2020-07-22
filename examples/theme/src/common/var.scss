@@ -71,9 +71,9 @@ $--color-text-ignore: #AAB0BD !default;
 /// color|1|Border Color|3
 $--border-color-base: #DADFE6 !default;
 /// color|1|Border Color|3
-$--border-color-light: mix($--color-white, $--border-color-base, 20%) !default;
+$--border-color-light: #F0F2F5 !default;
 /// color|1|Border Color|3
-$--border-color-lighter: mix($--color-white, $--border-color-base, 40%) !default;
+$--border-color-lighter: #F0F2F5 !default;
 /// color|1|Border Color|3
 $--border-color-extra-light: mix($--color-white, $--border-color-base, 60%) !default;
 
@@ -328,7 +328,7 @@ $--select-option-color: $--color-text-regular !default;
 $--select-option-disabled-color: $--color-text-placeholder !default;
 $--select-option-disabled-background: $--color-white !default;
 /// height||Other|4
-$--select-option-height: 34px !default;
+$--select-option-height: $--large-height !default;
 $--select-option-hover-background: $--background-color-base !default;
 /// color||Color|0
 $--select-option-selected-font-color: $--color-primary !default;
@@ -343,7 +343,7 @@ $--select-dropdown-shadow: $--box-shadow-light !default;
 $--select-dropdown-empty-color: #999 !default;
 /// height||Other|4
 $--select-dropdown-max-height: 274px !default;
-$--select-dropdown-padding: 6px 0 !default;
+$--select-dropdown-padding: 0px 0 !default;
 $--select-dropdown-empty-padding: 10px 0 !default;
 $--select-dropdown-border: solid 1px $--border-color-light !default;
 
@@ -912,8 +912,8 @@ $--tree-expand-icon-color: $--color-text-placeholder !default;
 /* Dropdown
 -------------------------- */
 $--dropdown-menu-box-shadow: $--box-shadow-light !default;
-$--dropdown-menuItem-hover-fill: $--color-primary-light-9 !default;
-$--dropdown-menuItem-hover-color: $--link-color !default;
+$--dropdown-menuItem-hover-fill: $--background-color-base !default;
+$--dropdown-menuItem-hover-color: $--color-text-regular !default;
 
 /* Badge
 -------------------------- */
@@ -940,18 +940,18 @@ $--card-padding: $--padding-horizontal !default;
 /// color||Color|0
 $--slider-main-background-color: $--color-primary !default;
 /// color||Color|0
-$--slider-runway-background-color: $--border-color-light !default;
+$--slider-runway-background-color: $--border-color-base !default;
 $--slider-button-hover-color: mix($--color-primary, black, 97%) !default;
 $--slider-stop-background-color: $--color-white !default;
-$--slider-disable-color: $--color-text-placeholder !default;
-$--slider-margin: 16px 0 !default;
-$--slider-border-radius: 3px !default;
+$--slider-disable-color: $--border-color-base !default;
+$--slider-margin: 13px 0 !default;
+$--slider-border-radius: 5px !default;
 /// height|1|Other|4
-$--slider-height: 6px !default;
+$--slider-height: 4px !default;
 /// height||Other|4
-$--slider-button-size: 16px !default;
-$--slider-button-wrapper-size: 36px !default;
-$--slider-button-wrapper-offset: -15px !default;
+$--slider-button-size: 12px !default;
+$--slider-button-wrapper-size: 30px !default;
+$--slider-button-wrapper-offset: -13px !default;
 
 /* Steps
 --------------------------*/
@@ -982,18 +982,18 @@ $--rate-icon-color: $--color-text-placeholder !default;
 
 /* DatePicker
 --------------------------*/
-$--datepicker-font-color: $--color-text-regular !default;
+$--datepicker-font-color: $--color-text-secondary !default;
 /// color|1|Color|0
 $--datepicker-off-font-color: $--color-text-placeholder !default;
 /// color||Color|0
-$--datepicker-header-font-color: $--color-text-regular !default;
-$--datepicker-icon-color: $--color-text-primary !default;
+$--datepicker-header-font-color: $--color-text-secondary !default;
+$--datepicker-icon-color: $--icon-color !default;
 $--datepicker-border-color: $--disabled-border-base !default;
-$--datepicker-inner-border-color: #e4e4e4 !default;
+$--datepicker-inner-border-color: $--border-color-light !default;
 /// color||Color|0
-$--datepicker-inrange-background-color: $--border-color-extra-light !default;
+$--datepicker-inrange-background-color: $--color-info-extra-light !default;
 /// color||Color|0
-$--datepicker-inrange-hover-background-color: $--border-color-extra-light !default;
+$--datepicker-inrange-hover-background-color: $--color-info-extra-light !default;
 /// color||Color|0
 $--datepicker-active-color: $--color-primary !default;
 /// color||Color|0
